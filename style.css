@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+}
+#navbar {
+  padding: 10px 10px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right, #e7e296, #8cc0e6);
+  height: 70px;
+  z-index: 99;
+}
+#logoIMG {
+  width: 130px;
+  height: 80px;
+}
+#navbar ul {
+  width: 100%;
+  list-style: none;
+}
+#navbar li {
+  position: relative;
+  float: left;
+  width: auto;
+}
+#navbar a {
+  text-decoration: none;
+  color: #189ba6;
+  display: flex;
+  font-size: 14px;
+  position: relative;
+  left: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 8px;
+  transition: all ease 0.3s;
+}
+.nav2 {
+  display: flex;
+  padding: 20px 15px;
+  gap: 8px;
+  justify-content: space-between;
+}
+#WhatsAppIMG {
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  bottom: 10px;
+  position: relative;
+}
+#btn1 {
+  width: 120px;
+  height: 50px;
+  border: none;
+  /* font-weight: bold; */
+  /* border: 1px solid black; */
+  /* background: linear-gradient(to right, #8cc0e6, #e7e296); */
+  /* background: linear-gradient(to right, #e7e296, #8cc0e6); */
+  background-color: #ed5b2c;
+  color: white;
+  font-size: 14px;
+  bottom: 10px;
+  padding: 10px 3px;
+  cursor: pointer;
+  position: relative;
+}
+#btn1:hover {
+  opacity: 0.7;
+}
+#WhatsAppIMG:hover {
+  opacity: 0.7;
+}
+.fa-angle-down {
+  padding: 0 3px;
+}
+#submenu {
+  visibility: hidden;
+  top: 80px;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  transition: all ease-in-out 0.4s;
+}
+li:hover ul#submenu {
+  visibility: visible;
+  opacity: 1;
+}
+#submenu li {
+  transition: all ease-in-out 0.6s;
+  width: 100%;
+  float: none;
+}
+#submenu a {
+  background: linear-gradient(to right, #e7e296, #8cc0e6);
+  color: #189ba6;
+  font-size: 14px;
+  padding: 10px;
+}
+/* #submenu a:hover {
+  opacity: 0.7;
+} */
+.hamMenu {
+  display: none;
+}
+.burger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  z-index: 99;
+  transition: all ease-in-out 0.3s;
+  background-color: #ed5b2c;
+}
+#container1 {
+  width: 100%;
+  height: 100%;
+  /* background-color: salmon; */
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  top: 12%;
+  z-index: -1;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 700px) {
+  #navbar ul {
+    position: fixed;
+    top: -100%;
+    /* top: 5%; */
+    left: 0;
+    flex-direction: column;
+    background: #ed5b2c;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: all linear 0.7s;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+    z-index: 3;
+  }
+  #navbar ul.active {
+    top: 10%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: all linear 0.7s;
+  }
+  #navbar a {
+    text-decoration: none;
+    display: list-item;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    align-items: flex-start;
+    padding: 8px 0px;
+    text-align: left;
+    transition: all ease 0.3s;
+    width: 60%;
+    column-count: 8;
+  }
+  #navbar li {
+    margin: 0;
+  }
+  .hamMenu {
+    position: absolute;
+    right: 2%;
+    display: block;
+    cursor: pointer;
+  }
+  #WhatsAppIMG {
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    left: 85%;
+  }
+  #btn1 {
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: #ed5b2c;
+    color: white;
+    padding: 2px 2px;
+    cursor: pointer;
+    font-size: 7px;
+    left: 85%;
+    position: relative;
+  }
+  .hamMenu {
+    position: fixed;
+    right: 42%;
+    z-index: 99;
+    display: block;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,21 @@
+1. Serve videos through Youtube.
+- Create channel and upload your videos as public. 
+	2. Change the portfolio in 2 cols grid
+	3. Social media: Desktop- left panel - orange
+		 Mobile- header - orange
+	4. Google map has been updated.
+	5. Remove social media toggle button
+6. All Social sites needs to create or update.
+7. Our process needs to be updated as old website.
+8. Put various buttons with diff names show the contact us pop-up.
+9. Add discount sections in page
+10. Update the address in all pages
+11. A pic of your office
+12. Update the Services page as per old website.
+13. Rename Send Message to Submit. On submit, a pop-up with message as "thank you for contacting us. Our representative will contact you within 24 hours."
+14. Testimonials
+15. Portfolios in submenu
+16. Design Gallery refer old website
+17. Visitors Info
+18. Social Media Ads
+
