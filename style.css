@@ -217,14 +217,14 @@ li:hover ul#submenu {
   cursor: pointer;
   opacity: 1;
   position: fixed;
-  top: 89%;
+  top: 45%;
   right: 28px;
   width: 280px;
 }
 .form-popup {
   display: none;
   position: fixed;
-  top: 16%;
+  top: 8%;
   right: 15px;
   border: 2px solid #ed5b2c;
   z-index: 90;
