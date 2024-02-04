@@ -58,13 +58,6 @@ body {
   gap: 8px;
   justify-content: space-between;
 }
-#WhatsAppIMG {
-  width: 40px;
-  cursor: pointer;
-  height: 40px;
-  bottom: 6px;
-  position: relative;
-}
 #btn1 {
   width: 120px;
   height: 50px;
@@ -82,9 +75,6 @@ body {
   position: relative;
 }
 #btn1:hover {
-  opacity: 0.7;
-}
-#WhatsAppIMG:hover {
   opacity: 0.7;
 }
 .fa-angle-down {
@@ -116,9 +106,6 @@ li:hover ul#submenu {
   font-size: 15px;
   padding: 10px;
 }
-/* #submenu a:hover {
-  opacity: 0.7;
-} */
 .hamMenu {
   display: none;
 }
@@ -135,6 +122,9 @@ li:hover ul#submenu {
   width: 100%;
   height: 100%;
   /* background-color: salmon; */
+}
+#container2 {
+  display: none;
 }
 .swiper {
   width: 100%;
@@ -155,6 +145,225 @@ li:hover ul#submenu {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#sidebar {
+  width: 7%;
+  height: 86%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 14%;
+  overflow: hidden;
+  z-index: 1;
+}
+#sidebartext {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  left: 1rem;
+  text-transform: uppercase;
+  color: #ed5b2c;
+}
+#sidebartext2 {
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: 4rem;
+  bottom: 8rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ed5b2c;
+}
+#sidebartext3 {
+  display: flex;
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  bottom: 7rem;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ed5b2c;
+}
+.sidebarlogoss img {
+  width: 30px;
+  height: 30px;
+  padding: 5px 10px;
+  margin-left: 22px;
+  bottom: 4rem;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+#formTitle {
+  font-size: 20px;
+  text-align: center;
+}
+.loginForm {
+  width: 100%;
+  height: 50%;
+  z-index: 99;
+  position: fixed;
+  overflow: hidden;
+}
+.open-button {
+  background: linear-gradient(to right, #ffcf6d, #ed5b2c);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 2px solid #ed5b2c;
+  z-index: 90;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  color: #ed5b2c;
+  height: 50%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+.form-container input[type='text'],
+.form-container input[type='number'] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: none;
+  color: #ed5b2c;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+.form-container input[type='text']:focus,
+.form-container input[type='number']:focus {
+  background-color: transparent;
+  outline: none;
+}
+.form-container input[type='email'] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border: none;
+  color: #ed5b2c;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+.form-container input[type='email']:focus {
+  background-color: transparent;
+  outline: none;
+}
+#Budget {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 15px 0;
+  border: none;
+  color: #ed5b2c;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+#Budget:focus {
+  background-color: transparent;
+  outline: none;
+}
+#Ptype {
+  width: 90%;
+  padding: 15px;
+  color: #ed5b2c;
+  margin: 5px 0 15px 0;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+#Ptype:focus {
+  background: transparent;
+  outline: none;
+}
+.valls {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+.form-container .btn {
+  background-color: #64a4ac;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: #ed5b2c;
+}
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+.running-text {
+  height: 0;
+  width: 82%;
+  left: 7%;
+  position: relative;
+  bottom: 30%;
+  z-index: 9;
+}
+#movingDiv {
+  white-space: nowrap;
+  overflow-x: auto;
+  line-height: 80%;
+  padding: 5vw 0;
+}
+#movingDiv::-webkit-scrollbar {
+  display: none;
+}
+#movingDiv h4 {
+  font-size: 3vw;
+  color: #ed5b2c;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: inline-block;
+  /* background-color: red; */
+}
+#circle {
+  width: 35px;
+  display: inline-block;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ffcf6d, #ed5b2c);
+}
+.con {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move 10s linear infinite;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 @media only screen and (max-width: 700px) {
   #navbar ul {
@@ -177,6 +386,7 @@ li:hover ul#submenu {
     border-top-right-radius: 0;
     transition: all linear 0.4s;
     width: 100vw;
+    z-index: 99;
   }
   #navbar a {
     text-decoration: none;
@@ -195,12 +405,7 @@ li:hover ul#submenu {
     margin: 0;
   }
   #WhatsAppIMG {
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: relative;
-    left: 8.2rem;
-    bottom: 13px;
+    display: none;
   }
   #btn1 {
     width: 70px;
@@ -212,14 +417,191 @@ li:hover ul#submenu {
     cursor: pointer;
     font-size: 7px;
     position: relative;
-    left: 8.2rem;
+    left: 7.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: 0px; */
+  }
+  .fa-angle-down {
+    display: none;
+    opacity: 0;
   }
   .hamMenu {
     position: fixed;
-    right: 42%;
+    right: 0;
     z-index: 99;
     display: block;
     cursor: pointer;
-    top: 20px;
+  }
+  #container1 {
+    display: none;
+  }
+  #container2 {
+    display: inline;
+  }
+  #sidebartext3 {
+    display: none;
+  }
+  #sidebartext2 {
+    display: none;
+  }
+  #sidebartext {
+    display: none;
+  }
+  #sidebar {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .sidebarlogoss img {
+    width: 30px;
+    height: 30px;
+    padding: 2px 0;
+    left: 0;
+    /* margin-left: 22px; */
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  #formTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .loginForm {
+    width: 100%;
+    height: 50%;
+    z-index: 98;
+    transition: all ease-in-out 0.5s;
+    position: fixed;
+    overflow: hidden;
+  }
+  .open-button {
+    background: linear-gradient(to right, #ffcf6d, #ed5b2c);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 30px;
+    width: 200px;
+    transition: all ease-in-out 0.5s;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 18px;
+    border: 2px solid #ed5b2c;
+    z-index: 9;
+    transition: all linear 0.7s;
+  }
+  .form-container {
+    max-width: 230px;
+    padding: 0px;
+    color: #ed5b2c;
+    height: 36%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    transition: all linear 0.7s;
+  }
+  .form-container input[type='text'],
+  .form-container input[type='number'] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: none;
+    color: #ed5b2c;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  .form-container input[type='text']:focus,
+  .form-container input[type='number']:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  .form-container input[type='email'] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    color: #ed5b2c;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  .form-container input[type='email']:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  #Budget {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    color: #ed5b2c;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  #Budget:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  #Ptype {
+    width: 90%;
+    padding: 15px;
+    color: #ed5b2c;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  #Ptype:focus {
+    background: transparent;
+    outline: none;
+  }
+  .valls {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+  }
+  .form-container .btn {
+    background-color: #64a4ac;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+  .form-container .cancel {
+    background-color: #ed5b2c;
+  }
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+  .running-text {
+    display: none;
   }
 }

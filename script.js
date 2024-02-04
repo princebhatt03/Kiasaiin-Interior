@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('#main'),
+  smooth: true,
+});
+
 const hamburger = document.querySelector('.hamMenu');
 const navMenu = document.querySelector('#navbar ul');
 
@@ -31,4 +36,43 @@ var swiper = new Swiper('.mySwiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+function openForm() {
+  document.getElementById('myForm').style.display = 'block';
+}
+
+function closeForm() {
+  document.getElementById('myForm').style.display = 'none';
+}
+
+var tl = gsap.timeline();
+
+tl.from('h1 ', {
+  y: -30,
+  duration: 0.5,
+  delay: 0.3,
+  stagger: 0.3,
+  opacity: 0,
+});
+tl.from('h2 ', {
+  y: -30,
+  duration: 0.5,
+  delay: 0.3,
+  stagger: 0.3,
+  opacity: 0,
+});
+tl.from('h3', {
+  y: -30,
+  duration: 0.5,
+  delay: 0.3,
+  stagger: 0.3,
+  opacity: 0,
+});
+tl.from('.sidebarlogoss img', {
+  y: -30,
+  duration: 0.5,
+  delay: 0.5,
+  stagger: 0.5,
+  opacity: 0,
 });
