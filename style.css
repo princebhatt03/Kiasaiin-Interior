@@ -12,6 +12,7 @@ body {
 #page1 {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 #navbar {
   padding: 10px 10px;
@@ -203,10 +204,10 @@ li:hover ul#submenu {
 }
 .loginForm {
   width: 100%;
-  height: 50%;
+  height: 0;
   z-index: 99;
   position: fixed;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .open-button {
   background: linear-gradient(to right, #ffcf6d, #ed5b2c);
@@ -214,25 +215,25 @@ li:hover ul#submenu {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
   position: fixed;
-  bottom: 23px;
+  top: 45%;
   right: 28px;
   width: 280px;
 }
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  top: 8%;
   right: 15px;
   border: 2px solid #ed5b2c;
   z-index: 90;
 }
 .form-container {
   max-width: 300px;
-  padding: 10px;
+  padding: 0;
   color: #ed5b2c;
-  height: 50%;
+  height: 0%;
   background-color: transparent;
   backdrop-filter: blur(10px);
 }
@@ -240,7 +241,7 @@ li:hover ul#submenu {
 .form-container input[type='number'] {
   width: 90%;
   padding: 10px;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 0 0;
   border: none;
   color: #ed5b2c;
   background: transparent;
@@ -255,7 +256,7 @@ li:hover ul#submenu {
 .form-container input[type='email'] {
   width: 90%;
   padding: 15px;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 0 0;
   border: none;
   color: #ed5b2c;
   background: transparent;
@@ -269,7 +270,7 @@ li:hover ul#submenu {
 #Budget {
   width: 90%;
   padding: 15px;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 0 0;
   border: none;
   color: #ed5b2c;
   background: transparent;
@@ -284,7 +285,7 @@ li:hover ul#submenu {
   width: 90%;
   padding: 15px;
   color: #ed5b2c;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 0 0;
   border: none;
   background: transparent;
   backdrop-filter: blur(20px);
@@ -318,7 +319,7 @@ li:hover ul#submenu {
 }
 .form-container .btn:hover,
 .open-button:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 .running-text {
   height: 0;
@@ -364,6 +365,11 @@ li:hover ul#submenu {
   to {
     transform: translateX(-100%);
   }
+}
+#page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: salmon;
 }
 @media only screen and (max-width: 700px) {
   #navbar ul {
@@ -421,7 +427,7 @@ li:hover ul#submenu {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* top: 0px; */
+    top: 2px;
   }
   .fa-angle-down {
     display: none;
@@ -480,10 +486,10 @@ li:hover ul#submenu {
   }
   .loginForm {
     width: 100%;
-    height: 50%;
+    height: 0;
     z-index: 98;
     transition: all ease-in-out 0.5s;
-    position: fixed;
+    position: relative;
     overflow: hidden;
   }
   .open-button {
@@ -494,15 +500,16 @@ li:hover ul#submenu {
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    bottom: 23px;
-    right: 30px;
-    width: 200px;
+    /* bottom: 23px; */
+    right: 26px;
+    width: 221px;
     transition: all ease-in-out 0.5s;
+    top: 92%;
   }
   .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
+    top: 23vh;
     right: 18px;
     border: 2px solid #ed5b2c;
     z-index: 9;
@@ -521,7 +528,7 @@ li:hover ul#submenu {
   .form-container input[type='number'] {
     width: 90%;
     padding: 10px;
-    margin: 5px 0 5px 0;
+    margin: 5px 0 2px 0;
     border: none;
     color: #ed5b2c;
     background: transparent;
@@ -536,7 +543,7 @@ li:hover ul#submenu {
   .form-container input[type='email'] {
     width: 90%;
     padding: 15px;
-    margin: 5px 0 5px 0;
+    margin: 5px 0 0 0;
     border: none;
     color: #ed5b2c;
     background: transparent;
@@ -550,7 +557,7 @@ li:hover ul#submenu {
   #Budget {
     width: 90%;
     padding: 15px;
-    margin: 5px 0 5px 0;
+    margin: 5px 0 0 0;
     border: none;
     color: #ed5b2c;
     background: transparent;
@@ -565,7 +572,7 @@ li:hover ul#submenu {
     width: 90%;
     padding: 15px;
     color: #ed5b2c;
-    margin: 5px 0 5px 0;
+    margin: 5px 0 0 0;
     border: none;
     background: transparent;
     backdrop-filter: blur(20px);
@@ -578,7 +585,7 @@ li:hover ul#submenu {
   .valls {
     width: 90%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 5px 0 10px 0;
     border: none;
     background: transparent;
     backdrop-filter: blur(20px);

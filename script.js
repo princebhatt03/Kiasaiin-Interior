@@ -38,14 +38,20 @@ var swiper = new Swiper('.mySwiper', {
   },
 });
 
-function openForm() {
-  document.getElementById('myForm').style.display = 'block';
-}
-
-function closeForm() {
-  document.getElementById('myForm').style.display = 'none';
-}
-
+let btn = document.querySelector('.open-button');
+let on = document.querySelector('#myForm');
+let flag = 0;
+btn.addEventListener('click', function () {
+  if (flag == 0) {
+    flag = 1;
+    on.style.display = 'block';
+    btn.textContent = 'Close Form';
+  } else {
+    on.style.display = 'none';
+    flag = 0;
+    btn.textContent = 'Open Form';
+  }
+});
 var tl = gsap.timeline();
 
 tl.from('h1 ', {

@@ -5,7 +5,7 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Kiasaiin.com</title>
+    <title>KiaSai Interiors</title>
     <link
       rel="shortcut icon"
       href="img/logo.png"
@@ -21,41 +21,39 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
   </head>
   <body>
+    <div id="navbar">
+      <img
+        id="logoIMG"
+        src="img/logo.png"
+        alt="Logo Image" />
+      <ul>
+        <li><a href="#">KiaSai Luxe</a></li>
+        <li>
+          <a href="#">Design Gallery <i class="fa-solid fa-angle-down"></i></a>
+          <ul id="submenu">
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Trending Designs</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Modular Kitchen </a></li>
+        <li><a href="#">Wardrobe</a></li>
+        <li><a href="#">Bedroom</a></li>
+        <li><a href="#">Living Room</a></li>
+        <li><a href="#">Bathroom</a></li>
+        <li><a href="#">Space Saving Furniture</a></li>
+      </ul>
+      <div class="nav2">
+        <button id="btn1">Get Free Estimate</button>
+      </div>
+    </div>
+    <div class="hamMenu">
+      <span class="burger"></span>
+      <span class="burger"></span>
+      <span class="burger"></span>
+    </div>
     <div id="main">
       <div id="page1">
-        <div id="navbar">
-          <img
-            id="logoIMG"
-            src="img/logo.png"
-            alt="Logo Image" />
-          <ul>
-            <li><a href="#">KiaSai Luxe</a></li>
-            <li>
-              <a href="#"
-                >Design Gallery <i class="fa-solid fa-angle-down"></i
-              ></a>
-              <ul id="submenu">
-                <li><a href="#">Images</a></li>
-                <li><a href="#">Trending Designs</a></li>
-                <li><a href="#">Portfolio</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Modular Kitchen </a></li>
-            <li><a href="#">Wardrobe</a></li>
-            <li><a href="#">Bedroom</a></li>
-            <li><a href="#">Living Room</a></li>
-            <li><a href="#">Bathroom</a></li>
-            <li><a href="#">Space Saving Furniture</a></li>
-          </ul>
-          <div class="nav2">
-            <button id="btn1">Get Free Estimate</button>
-          </div>
-        </div>
-        <div class="hamMenu">
-          <span class="burger"></span>
-          <span class="burger"></span>
-          <span class="burger"></span>
-        </div>
         <div id="container1">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -168,11 +166,7 @@
           </div>
         </div>
         <div class="loginForm">
-          <button
-            class="open-button"
-            onclick="openForm()">
-            Open Form
-          </button>
+          <button class="open-button">Open Form</button>
           <div
             class="form-popup"
             id="myForm">
@@ -256,10 +250,9 @@
                 Submit
               </button>
               <button
-                type="button"
-                class="btn cancel"
-                onclick="closeForm()">
-                Close
+                type="reset"
+                class="btn cancel">
+                Reset
               </button>
             </form>
           </div>
@@ -281,7 +274,9 @@
           </div>
         </div>
       </div>
-      <div id="page2"></div>
+      <div id="page2">
+        <p>Hello</p>
+      </div>
       <div id="page3"></div>
       <div id="page4"></div>
     </div>
