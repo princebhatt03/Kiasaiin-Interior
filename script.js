@@ -103,7 +103,7 @@ tl.from('.sidebarlogoss img', {
 });
 
 const myNum = document.querySelectorAll('.count');
-let speed = 500;
+let speed = 10000;
 
 myNum.forEach(myCount => {
   let target_count = myCount.dataset.count;
