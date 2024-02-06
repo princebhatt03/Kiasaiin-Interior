@@ -1149,12 +1149,7 @@ section {
     font-weight: bold;
   }
   .page2-headline p {
-    font-size: 5px;
-    width: 81%;
-    text-align: center;
-    left: 8%;
-    top: 172%;
-    position: absolute;
+    display: none;
   }
   .mySlides {
     display: none;
@@ -1213,7 +1208,7 @@ section {
     cursor: pointer;
     transition: all linear 0.5s;
     height: 40px;
-    top: 0;
+    top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1415,17 +1410,19 @@ section {
     font-size: 20px;
   }
   .dis-in {
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 30%;
+    display: none;
   }
   #view-project {
-    width: 140px;
+    width: 150px;
     height: 40px;
     cursor: pointer;
     border: none;
     background: linear-gradient(to right, #ed5b2c, #ffcf6d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px 16px;
   }
   .ytyt {
     width: 100%;
