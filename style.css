@@ -245,7 +245,7 @@ li:hover ul#submenu {
   backdrop-filter: blur(10px);
 }
 .form-container input[type='text'],
-.form-container input[type='number'] {
+.form-container input[type='tel'] {
   width: 90%;
   padding: 10px;
   margin: 5px 0 0 0;
@@ -256,7 +256,7 @@ li:hover ul#submenu {
   overflow: hidden;
 }
 .form-container input[type='text']:focus,
-.form-container input[type='number']:focus {
+.form-container input[type='tel']:focus {
   background-color: transparent;
   outline: none;
 }
@@ -1032,7 +1032,7 @@ article:hover {
     transition: all linear 0.7s;
   }
   .form-container input[type='text'],
-  .form-container input[type='number'] {
+  .form-container input[type='tel'] {
     width: 90%;
     padding: 10px;
     margin: 5px 0 2px 0;
@@ -1043,7 +1043,7 @@ article:hover {
     overflow: hidden;
   }
   .form-container input[type='text']:focus,
-  .form-container input[type='number']:focus {
+  .form-container input[type='tel']:focus {
     background-color: transparent;
     outline: none;
   }
