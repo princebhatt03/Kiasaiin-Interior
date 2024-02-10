@@ -636,9 +636,9 @@ section {
   left: 20%;
 }
 
-.parallax-box img {
-  opacity: 0.6;
-}
+/* .parallax-box img {
+  opacity: 1;
+} */
 
 .parallax-box.slider-box img {
   opacity: 1;
@@ -4236,9 +4236,10 @@ article .section-title {
     left: 0;
   }
 
-  .parallax-box img {
+  /* .parallax-box img {
     opacity: 1;
-  }
+    visibility: visible;
+  } */
 
   .parallax-item {
     margin-bottom: 40px;
