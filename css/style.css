@@ -409,6 +409,7 @@ section {
   padding: 16px 15px;
   border: 1px solid black;
   cursor: pointer;
+  transition: all ease 0.3s;
   font-weight: bold;
   opacity: 1;
   position: fixed;
@@ -429,7 +430,8 @@ section {
   padding: 0;
   color: #ed5b2c;
   height: 0%;
-  background-color: transparent;
+  opacity: 0.8;
+  background-color: #3e2723;
   backdrop-filter: blur(10px);
 }
 .form-container input[type='text'],
@@ -512,10 +514,10 @@ section {
 .form-container .cancel {
   background-color: #ed5b2c;
 }
-.form-container .btn:hover,
+/* .form-container .btn:hover,
 .open-button:hover {
-  opacity: 0.7;
-}
+  color: white;
+} */
 .anim-button span {
   float: left;
   width: 100%;
