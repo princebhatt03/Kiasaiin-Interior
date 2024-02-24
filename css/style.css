@@ -404,24 +404,24 @@ section {
   /* overflow: hidden; */
 }
 .open-button {
-  background: linear-gradient(to right, #ed5b2c, #ffcf6d);
+  background: linear-gradient(to right, rgb(237, 91, 44), rgb(255, 207, 109));
   color: black;
   padding: 16px 15px;
   border: 1px solid black;
   cursor: pointer;
-  transition: all ease 0.3s;
+  transition: all 0.3s ease 0s;
   font-weight: bold;
   opacity: 1;
   position: fixed;
-  top: 18%;
+  top: 16%;
   right: 12%;
-  width: 105px;
+  width: 135px;
 }
 .form-popup {
   display: none;
   position: fixed;
-  top: 28%;
-  right: 10px;
+  top: 25%;
+  right: 20px;
   border: 2px solid #ed5b2c;
   z-index: 90;
 }
@@ -433,6 +433,43 @@ section {
   opacity: 0.8;
   background-color: #3e2723;
   backdrop-filter: blur(10px);
+}
+#navbar {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#navbar ul {
+  width: 100%;
+  list-style: none;
+}
+#navbar li {
+  position: relative;
+  float: left;
+  width: auto;
+}
+#navbar a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 50px;
+  transition: all ease-in 0.3s;
+}
+@media screen and (max-width: 900px) {
+  .loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 25%;
+    right: 15%;
+    border: 2px solid #ed5b2c;
+    z-index: 90;
+  }
 }
 .form-container input[type='text'],
 .form-container input[type='tel'] {
@@ -524,15 +561,12 @@ section {
   position: relative;
   top: 0;
 }
-
 .anim-button:hover span {
   top: 100px;
 }
-
 .anim-button:hover i {
   top: 0;
 }
-
 .custom-link-holder {
   float: left;
   width: 100%;
@@ -540,7 +574,6 @@ section {
   margin-top: 50px;
   padding-top: 50px;
 }
-
 .custom-link-holder:before {
   content: '';
   position: absolute;
@@ -550,23 +583,19 @@ section {
   height: 1px;
   background: #000;
 }
-
 .custom-link-holder a {
   float: none;
   display: inline-table;
 }
-
 .parallax-item,
 .paralax-media {
   /* float: left;
 	width: 100%;
 	position: relative; */
 }
-
 .parallax-item {
   /*margin-bottom: 170px;*/
 }
-
 .parallax-deck {
   position: absolute;
   bottom: 0;
@@ -817,6 +846,41 @@ header:before {
 
 .dynamic-title {
   display: none;
+}
+#navbar2 {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  #navbar2 {
+    display: flex;
+    top: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+  #navbar2 ul {
+    width: 100%;
+    /* background:linear-gradient(to right, #ed5b2c, #ffcf6d); */
+    background-color: #3e2723;
+    /* background: #ed5b2c; */
+    list-style: none;
+  }
+  #navbar2 li {
+    width: auto;
+    float: left;
+    position: relative;
+  }
+  #navbar2 a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    transition: all ease 0.5s;
+    padding: 15px 26px;
+  }
 }
 
 /*------ navigation  ------------------------------------------------*/
@@ -4305,7 +4369,7 @@ article .section-title {
 
   .nav-holder {
     position: absolute;
-    top: 80px;
+    top: 110px;
     left: 0;
     width: 100%;
     background: linear-gradient(to right, #ed5b2c, #ffcf6d);

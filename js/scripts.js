@@ -935,10 +935,10 @@ btn.addEventListener('click', function () {
   if (flag == 0) {
     flag = 1;
     on.style.display = 'block';
-    btn.textContent = 'Close Form';
+    btn.textContent = 'Close';
   } else {
     on.style.display = 'none';
     flag = 0;
-    btn.textContent = 'Open Form';
+    btn.textContent = 'Get Free Quote';
   }
 });
