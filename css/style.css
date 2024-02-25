@@ -440,7 +440,7 @@ section {
 .form-popup {
   display: none;
   position: absolute;
-  top: 10rem;
+  top: 8rem;
   right: 20px;
   border: 2px solid #ed5b2c;
   z-index: 90;
@@ -476,6 +476,15 @@ section {
   transition: all ease-in 0.3s;
 }
 @media screen and (max-width: 900px) {
+  .form-container {
+    max-width: 200px;
+    padding: 0;
+    color: #ed5b2c;
+    height: 20rem;
+    opacity: 0.9;
+    background-color: #3e2723;
+    backdrop-filter: blur(10px);
+  }
   .loginForm {
     display: flex;
     justify-content: center;
@@ -485,7 +494,7 @@ section {
   .form-popup {
     display: none;
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     right: 15%;
     border: 2px solid #ed5b2c;
     z-index: 90;
