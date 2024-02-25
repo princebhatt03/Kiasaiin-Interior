@@ -214,11 +214,29 @@ blockquote p {
 .content {
   width: 100%;
   position: relative;
-  z-index: 3;
   float: left;
   background: #fff;
 }
-
+/* @media screen and (max-width: 900px) {
+  .content {
+    width: 100%;
+    position: relative;
+    float: left;
+    background: #fff;
+  }
+  .content:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 7px;
+    left: 42px;
+    background-repeat: repeat-y;
+    background-image: url(../images/bg-dec.png);
+    opacity: 0.5;
+  }
+} */
 .pad-con {
   padding-top: 80px;
 }
@@ -406,16 +424,17 @@ section {
 .open-button {
   background: linear-gradient(to right, rgb(237, 91, 44), rgb(255, 207, 109));
   color: black;
-  padding: 16px 15px;
+  padding: 10px 15px;
   border: 1px solid black;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-weight: bold;
   opacity: 1;
   position: fixed;
-  top: 16%;
+  top: 16.5px;
   right: 12%;
   width: 135px;
+  height: 44px;
 }
 .form-popup {
   display: none;
@@ -430,7 +449,7 @@ section {
   padding: 0;
   color: #ed5b2c;
   height: 0%;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: #3e2723;
   backdrop-filter: blur(10px);
 }
@@ -853,7 +872,7 @@ header:before {
 @media screen and (max-width: 900px) {
   #navbar2 {
     display: flex;
-    top: 4rem;
+    top: 4.5rem;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -861,9 +880,8 @@ header:before {
   }
   #navbar2 ul {
     width: 100%;
-    /* background:linear-gradient(to right, #ed5b2c, #ffcf6d); */
-    background-color: #3e2723;
-    /* background: #ed5b2c; */
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     list-style: none;
   }
   #navbar2 li {
@@ -882,7 +900,6 @@ header:before {
     padding: 15px 27px;
   }
 }
-
 /*------ navigation  ------------------------------------------------*/
 .nav-holder {
   float: right;
@@ -890,13 +907,11 @@ header:before {
   top: 22px;
   left: 50px;
 }
-
 nav {
   position: relative;
   float: left;
   width: 100%;
 }
-
 nav li {
   float: left;
   position: relative;
@@ -3027,7 +3042,7 @@ footer.fixed-footer .footer-social li a:hover {
   width: 100%;
   padding: 90px 20px 90px 80px;
   background: #3e2723;
-  z-index: 2;
+  z-index: -99;
 }
 
 .content-footer:before {
