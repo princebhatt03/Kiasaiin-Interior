@@ -494,12 +494,38 @@ section {
   .form-popup {
     display: none;
     position: absolute;
-    top: 8rem;
+    top: 18vh;
+    right: 20%;
+    border: 2px solid #ed5b2c;
+    z-index: 90;
+    /* height: 20rem; */
+  }
+}
+/* @media screen and (max-width: 400px) {
+  .form-container {
+    max-width: 200px;
+    padding: 0;
+    color: #ed5b2c;
+    height: 20rem;
+    opacity: 0.9;
+    background-color: #3e2723;
+    backdrop-filter: blur(10px);
+  }
+  .loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .form-popup {
+    display: none;
+    position: absolute;
+    top: 4rem;
     right: 15%;
     border: 2px solid #ed5b2c;
     z-index: 90;
   }
-}
+} */
 .form-container input[type='text'],
 .form-container input[type='tel'] {
   width: 100%;
