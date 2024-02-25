@@ -65,6 +65,7 @@ h1 {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 400;
+  padding: 5px 0;
   line-height: 1.17em;
 }
 
@@ -418,7 +419,7 @@ section {
   width: 100%;
   height: 0;
   z-index: 99;
-  position: fixed;
+  position: absolute;
   /* overflow: hidden; */
 }
 .open-button {
@@ -432,7 +433,7 @@ section {
   opacity: 1;
   position: fixed;
   top: 16.5px;
-  right: 12%;
+  right: 12.6%;
   width: 135px;
   height: 44px;
 }
@@ -448,7 +449,7 @@ section {
   max-width: 250px;
   padding: 0;
   color: #ed5b2c;
-  height: 0%;
+  height: 18rem;
   opacity: 0.9;
   background-color: #3e2723;
   backdrop-filter: blur(10px);
@@ -483,8 +484,8 @@ section {
   }
   .form-popup {
     display: none;
-    position: fixed;
-    top: 25%;
+    position: absolute;
+    top: 10rem;
     right: 15%;
     border: 2px solid #ed5b2c;
     z-index: 90;
@@ -493,8 +494,9 @@ section {
 .form-container input[type='text'],
 .form-container input[type='tel'] {
   width: 100%;
-  padding: 10px;
-  margin: 5px 0 0 0;
+  /* padding: 5px; */
+  padding: 8px 2px;
+  /* margin: 5px 0 0 0; */
   border: none;
   color: #ed5b2c;
   background: transparent;
@@ -506,10 +508,17 @@ section {
   background-color: transparent;
   outline: none;
 }
+::placeholder {
+  color: #ed5b2c;
+}
+select::after {
+  background-color: #3e2723;
+}
 .form-container input[type='email'] {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 0 0;
+  /* padding: 5px; */
+  padding: 8px 2px;
+  /* margin: 5px 0 0 0; */
   border: none;
   color: #ed5b2c;
   background: transparent;
@@ -522,8 +531,8 @@ section {
 }
 #Budget {
   width: 100%;
-  padding: 15px;
-  margin: 5px 0 0 0;
+  padding: 8px 2px;
+  /* margin: 5px 0 0 0; */
   border: none;
   color: #ed5b2c;
   background: transparent;
@@ -536,9 +545,9 @@ section {
 }
 #Ptype {
   width: 100%;
-  padding: 15px;
+  padding: 8px 2px;
   color: #ed5b2c;
-  margin: 5px 0 0 0;
+  /* margin: 5px 0 0 0; */
   border: none;
   background: transparent;
   backdrop-filter: blur(20px);
@@ -560,7 +569,7 @@ section {
 .form-container .btn {
   background-color: #64a4ac;
   color: white;
-  padding: 10px 10px;
+  padding: 8px 10px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -593,7 +602,7 @@ section {
   margin-top: 50px;
   padding-top: 50px;
 }
-.custom-link-holder:before {
+/* .custom-link-holder:before {
   content: '';
   position: absolute;
   top: 0;
@@ -601,7 +610,7 @@ section {
   width: 50%;
   height: 1px;
   background: #000;
-}
+} */
 .custom-link-holder a {
   float: none;
   display: inline-table;
@@ -881,7 +890,7 @@ header:before {
   #navbar2 ul {
     width: 100%;
     background-color: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
     list-style: none;
   }
   #navbar2 li {
