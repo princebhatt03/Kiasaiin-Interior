@@ -935,7 +935,7 @@ btn.addEventListener('click', function () {
   if (flag == 0) {
     flag = 1;
     on.style.display = 'block';
-    btn.textContent = 'Close';
+    btn.textContent = 'Close Form';
   } else {
     on.style.display = 'none';
     flag = 0;

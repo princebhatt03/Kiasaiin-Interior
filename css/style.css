@@ -433,14 +433,14 @@ section {
   opacity: 1;
   position: fixed;
   top: 16.5px;
-  right: 12.6%;
+  right: 12%;
   width: 135px;
   height: 44px;
 }
 .form-popup {
   display: none;
-  position: fixed;
-  top: 25%;
+  position: absolute;
+  top: 10rem;
   right: 20px;
   border: 2px solid #ed5b2c;
   z-index: 90;
