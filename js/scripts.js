@@ -928,17 +928,29 @@ $(document).ready(function () {
   initMonolit();
   initparallax();
 });
-let btn = document.querySelector('.open-button');
-let on = document.querySelector('#myForm');
-let flag = 0;
-btn.addEventListener('click', function () {
-  if (flag == 0) {
-    flag = 1;
-    on.style.display = 'block';
-    btn.textContent = 'Close Form';
-  } else {
-    on.style.display = 'none';
-    flag = 0;
-    btn.textContent = 'Get Free Quote';
-  }
-});
+// let btn = document.querySelector('.open-button');
+// let on = document.querySelector('#popup-formm1');
+// let flag = 0;
+// btn.addEventListener('click', function () {
+//   if (flag == 0) {
+//     flag = 1;
+//     on.style.display = 'block';
+//     btn.textContent = 'Get Free Quote';
+//   } else {
+//     on.style.display = 'none';
+//     flag = 0;
+//     btn.textContent = 'Get Free Quote';
+//   }
+// });
+
+// Form....
+
+function openPopup() {
+  document.getElementById('overlay-formm1').style.display = 'block';
+  document.getElementById('popup-formm1').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('overlay-formm1').style.display = 'none';
+  document.getElementById('popup-formm1').style.display = 'none';
+}

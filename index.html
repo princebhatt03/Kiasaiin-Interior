@@ -158,9 +158,14 @@
             </nav>
           </div>
           <li>
-            <a href="#"><button class="open-button">Get Free Quote</button></a>
+            <button
+              type="button"
+              class="open-button"
+              onclick="openPopup()">
+              Get Free Quote
+            </button>
           </li>
-          <!-- navigation  end -->
+          <!-- navigation  end  onclick="openPopup()"-->
         </div>
         <div id="navbar2">
           <ul>
@@ -171,7 +176,7 @@
                 target="_blank">
                 <!-- <i class="fa fa-facebook"></i> -->
                 <img
-                  style="width: 20px; height: 20px"
+                  style="width: 30px; height: 30px"
                   src="images/icons/fb.png"
                   alt="" />
               </a>
@@ -183,7 +188,7 @@
                 target="_blank">
                 <!-- <i class="fa fa-instagram"></i> -->
                 <img
-                  style="width: 20px; height: 20px"
+                  style="width: 30px; height: 30px"
                   src="images/icons/insta.png"
                   alt="" />
               </a>
@@ -193,20 +198,20 @@
                 href="https://www.pinterest.com/kiasaiinterior/"
                 title="Check our pinterest for latest designs"
                 target="_blank">
-                <!-- <i class="fa fa-pinterest"></i> -->
+                <!-- <i class="fa fa-pinterest"></i> 919673990199 -->
                 <img
-                  style="width: 20px; height: 20px"
+                  style="width: 30px; height: 30px"
                   src="images/icons/pinterest.png"
                   alt="" />
               </a>
             </li>
             <li>
               <a
-                href="https://web.whatsapp.com/send?phone=919673990199&text=Hello%20Design%20Cafe%20Team,%20I%20am%20interested%20to%20know%20more%20about%20your%20home%20interior%20design%20services."
+                href="https://wa.me/919673990199"
                 title="Connect with us on WhatsApp"
                 target="_blank">
                 <img
-                  style="width: 20px; height: 20px"
+                  style="width: 30px; height: 30px"
                   src="images/icons/WhatsApp.png"
                   alt="" />
               </a>
@@ -217,7 +222,7 @@
                 title="Call us"
                 target="_blank"
                 ><img
-                  style="width: 20px; height: 20px"
+                  style="width: 30px; height: 30px"
                   src="images/icons/phone.png"
                   alt=""
               /></a>
@@ -248,7 +253,6 @@
                 class="slideshow-item owl-carousel"
                 data-top-bottom="transform: translateY(300px);"
                 data-bottom-top="transform: translateY(-300px);">
-                <!-- 1 -->
                 <div class="item">
                   <div
                     class="bg"
@@ -259,20 +263,105 @@
                     class="bg"
                     style="background-image: url(images/bg/Slider5.jpg)"></div>
                 </div>
-                <!-- 2 -->
                 <div class="item">
                   <div
                     class="bg"
                     style="background-image: url(images/bg/Slider3.jpg)"></div>
                 </div>
-                <!-- 3 -->
                 <div class="item">
                   <div
                     class="bg"
                     style="background-image: url(images/bg/Slider4.jpg)"></div>
                 </div>
               </div>
-              <div class="loginForm">
+              <div
+                class="overlay-form11"
+                id="overlay-formm1"></div>
+              <div
+                class="popup-form11"
+                id="popup-formm1">
+                <form>
+                  <h1>Meet a &nbsp;Designer</h1>
+                  <input
+                    type="text"
+                    placeholder="Enter Name" />
+                  <input
+                    type="tel"
+                    placeholder="Enter Number" />
+                  <input
+                    type="email"
+                    placeholder="Enter Email" />
+                  <select
+                    name="budget"
+                    id="budget">
+                    <option
+                      class="valls"
+                      value="1">
+                      Budget
+                    </option>
+                    <option
+                      class="valls"
+                      value="2">
+                      Under 5k
+                    </option>
+                    <option
+                      class="valls"
+                      value="3">
+                      Under 10k
+                    </option>
+                    <option
+                      class="valls"
+                      value="4">
+                      Under 15k
+                    </option>
+                    <option
+                      class="valls"
+                      value="5">
+                      Under 20k
+                    </option>
+                  </select>
+                  <select
+                    name="Property"
+                    id="ptype">
+                    <option
+                      class="valls"
+                      value="1">
+                      Property Type
+                    </option>
+                    <option
+                      class="valls"
+                      value="2">
+                      Small
+                    </option>
+                    <option
+                      class="valls"
+                      value="3">
+                      Medium
+                    </option>
+                    <option
+                      class="valls"
+                      value="4">
+                      Large
+                    </option>
+                    <option
+                      class="valls"
+                      value="5">
+                      Extra Large
+                    </option>
+                  </select>
+                  <button
+                    type="submit"
+                    onclick="closePopup()">
+                    Submit
+                  </button>
+                  <button
+                    type="button"
+                    onclick="closePopup()">
+                    Close
+                  </button>
+                </form>
+              </div>
+              <!-- <div class="loginForm">
                 <div
                   class="form-popup"
                   id="myForm">
@@ -281,26 +370,22 @@
                     class="form-container">
                     <h1 id="formTitle">Meet a Designer</h1>
 
-                    <!-- <label for="name">Name</label> -->
                     <input
                       type="text"
                       placeholder="Enter Name"
                       name="name"
                       required />
 
-                    <!-- <label for="number">Mobile Number</label> -->
                     <input
                       type="tel"
                       placeholder="Enter Number"
                       name="number"
                       required />
-                    <!-- <label for="email">Enter Email</label> -->
                     <input
                       type="email"
                       placeholder="Enter Email"
                       name="email"
                       required />
-                    <!-- <label for="Budget">Budget</label> -->
                     <select
                       id="Budget"
                       name="Budget">
@@ -330,7 +415,6 @@
                         under 20k
                       </option>
                     </select>
-                    <!-- <label for="type">Property Type</label> -->
                     <select
                       id="Ptype"
                       name="Property">
@@ -372,13 +456,13 @@
                     </button>
                   </form>
                 </div>
-              </div>
+              </div> -->
               <!-- Hero image   end -->
               <div class="overlay"></div>
               <!-- Hero text   -->
               <div class="hero-wrap-item center-item">
-                <h1 style="color: navajowhite">KiaSai Interior LiveSpace</h1>
-                <h3 style="font-size: 8px">Design your home with passion</h3>
+                <h1 style="color: white">KiaSai Interior LiveSpace</h1>
+                <h3 style="font-size: 10px">Design your home with passion</h3>
               </div>
               <!-- Hero text   end-->
               <div class="quote-btn-box">
@@ -1026,7 +1110,7 @@
       <!-- Fixed footer end-->
     </div>
     <!-- Main end -->
-    <!--=============== scripts  ===============-->
+    <!--=============== scripts ===============-->
     <script
       type="text/javascript"
       src="js/jquery.min.js"></script>
