@@ -433,10 +433,10 @@ section {
   font-weight: bold;
   opacity: 1;
   position: fixed;
-  top: 17.5px;
+  top: 18px;
   right: 12%;
   width: 140px;
-  height: 42px;
+  height: 40px;
 }
 /* .form-popup {
   display: none;
@@ -998,7 +998,7 @@ header:before {
   #navbar2 ul {
     width: 100%;
     background-color: transparent;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(60px);
     list-style: none;
   }
   #navbar2 li {
