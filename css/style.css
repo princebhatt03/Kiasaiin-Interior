@@ -434,10 +434,28 @@ section {
   opacity: 1;
   position: fixed;
   top: 18px;
-  right: 12%;
+  right: 11%;
   width: 140px;
   height: 40px;
 }
+@media screen and (max-width: 800px) {
+  .open-button {
+    background: linear-gradient(to right, rgb(237, 91, 44), rgb(255, 207, 109));
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    opacity: 1;
+    position: fixed;
+    top: 18px;
+    right: 13%;
+    width: 140px;
+    height: 40px;
+  }
+}
+
 /* .form-popup {
   display: none;
   position: absolute;
@@ -544,8 +562,25 @@ section {
   width: 100px;
   height: 40px;
 } */
+@media screen and (max-width: 800px) {
+  .popup-form11 {
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #3e2723;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    text-align: center;
+  }
+}
 .popup-form11 {
-  width: 100%;
+  /* width: 100%; */
   display: none;
   position: absolute;
   z-index: 100;
@@ -998,7 +1033,7 @@ header:before {
   #navbar2 ul {
     width: 100%;
     background-color: transparent;
-    backdrop-filter: blur(60px);
+    backdrop-filter: blur(100px);
     list-style: none;
   }
   #navbar2 li {
@@ -1014,7 +1049,7 @@ header:before {
     text-align: center;
     justify-content: space-between;
     transition: all ease 0.5s;
-    padding: 15px 22px;
+    padding: 15px 18px;
   }
 }
 /*------ navigation  ------------------------------------------------*/
