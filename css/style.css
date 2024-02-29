@@ -62,11 +62,11 @@ body {
 
 /*--------------Typography--------------------------------------*/
 h1 {
-  font-size: 15px;
+  font-size: 25px;
   /* text-transform: uppercase; */
   font-weight: 700;
   padding: 5px 0;
-  color: #86beeb;
+  color: #fff8ba;
   line-height: 1.17em;
 }
 
@@ -452,7 +452,7 @@ section {
     top: 18px;
     right: 13%;
     width: 140px;
-    height: 40px;
+    height: 42px;
   }
 }
 
@@ -4413,7 +4413,7 @@ article .section-title {
     border: 1px solid rgba(255, 255, 255, 0.21);
     padding: 13px 6px 6px 6px;
     position: relative;
-    margin: 9px 3px;
+    margin: 9px 2px;
     cursor: pointer;
     right: -1.5rem;
   }
@@ -4437,7 +4437,7 @@ article .section-title {
 
   .header-inner {
     float: left;
-    padding-left: 30px;
+    padding-left: 0;
   }
 
   .inline-facts-holder:before,
@@ -4536,7 +4536,7 @@ article .section-title {
 
   .nav-holder {
     position: absolute;
-    top: 110px;
+    top: 125px;
     left: 0;
     width: 100%;
     background: linear-gradient(to right, #ed5b2c, #ffcf6d);
