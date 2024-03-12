@@ -93,9 +93,9 @@
                   <a href="about.html">Design Gallery</a>
                   <!-- Scroll navigation  -->
                 </li>
-                <li><a href="services.html">Modular Kitchen</a></li>
+                <li><a href="portfolio.html">Modular Kitchen</a></li>
                 <li>
-                  <a href="#">Wardrobe</a>
+                  <a href="contact.html">Wardrobe</a>
                   <!-- <ul>
                     <li><a href="portfolio.html">All Projects</a></li>
                     <li>
@@ -280,89 +280,178 @@
               <div
                 class="popup-form11"
                 id="popup-formm1">
-                <form>
-                  <h1>Meet a &nbsp;Designer</h1>
-                  <input
-                    type="text"
-                    required
-                    placeholder="Enter Name" />
-                  <input
-                    type="tel"
-                    required
-                    placeholder="Enter Number" />
-                  <input
-                    type="email"
-                    required
-                    placeholder="Enter Email" />
-                  <select
-                    name="budget"
-                    id="budget">
-                    <option
-                      class="valls"
-                      value="1">
-                      Budget
-                    </option>
-                    <option
-                      class="valls"
-                      value="2">
-                      Under 5k
-                    </option>
-                    <option
-                      class="valls"
-                      value="3">
-                      Under 10k
-                    </option>
-                    <option
-                      class="valls"
-                      value="4">
-                      Under 15k
-                    </option>
-                    <option
-                      class="valls"
-                      value="5">
-                      Under 20k
-                    </option>
-                  </select>
-                  <select
-                    name="Property"
-                    id="ptype">
-                    <option
-                      class="valls"
-                      value="1">
-                      Property Type
-                    </option>
-                    <option
-                      class="valls"
-                      value="2">
-                      Small
-                    </option>
-                    <option
-                      class="valls"
-                      value="3">
-                      Medium
-                    </option>
-                    <option
-                      class="valls"
-                      value="4">
-                      Large
-                    </option>
-                    <option
-                      class="valls"
-                      value="5">
-                      Extra Large
-                    </option>
-                  </select>
-                  <button
-                    type="submit"
-                    onclick="closePopup()">
-                    Submit
-                  </button>
-                  <button
-                    type="button"
-                    onclick="closePopup()">
-                    Close
-                  </button>
-                </form>
+                <div class="row">
+                  <div class="col-md-12">
+                    <form
+                      id="formmm"
+                      action=""
+                      method="post">
+                      <h1 class="form-h1">Meet a Designer</h1>
+
+                      <fieldset id="fieldset">
+                        <legend id="legend">
+                          <span class="number">1</span> Your Basic Info
+                        </legend>
+
+                        <!-- <label for="name">Name:</label> -->
+                        <input
+                          placeholder="Enter Name"
+                          required
+                          type="text"
+                          id="name"
+                          name="user_name" />
+
+                        <!-- <label for="email">Email:</label> -->
+                        <input
+                          required
+                          type="email"
+                          id="mail"
+                          placeholder="Enter Email"
+                          name="user_email" />
+
+                        <!-- <label for="password">Phone Number:</label> -->
+                        <input
+                          placeholder="Enter Phone Number"
+                          required
+                          type="tel"
+                          id="password"
+                          name="user_password" />
+                      </fieldset>
+                      <fieldset>
+                        <legend id="legend">
+                          <span class="number">2</span>Your Home Info
+                        </legend>
+                        <label id="label">Property Type:</label>
+                        <div class="flex">
+                          <input
+                            type="radio"
+                            id="under_13"
+                            value="under_13"
+                            name="user_age" /><label
+                            for="under_13"
+                            class="light"
+                            >Small</label
+                          >
+                          <input
+                            type="radio"
+                            id="over_13"
+                            value="over_13"
+                            name="user_age" /><label
+                            for="over_13"
+                            class="light"
+                            >Medium</label
+                          >
+                          <input
+                            type="radio"
+                            id="over_13"
+                            value="over_13"
+                            name="user_age" /><label
+                            for="over_13"
+                            class="light"
+                            >Large</label
+                          >
+                          <!-- <input type="radio" id="over_13" value="over_13" name="user_age" /> -->
+                        </div>
+                        <!-- <label for="over_13"
+                        class="light">Extra
+                        Large</label><br> -->
+
+                        <!-- <label for="bio">Bio:</label>
+                          <textarea
+                            id="bio"
+                            name="user_bio"></textarea> -->
+
+                        <label
+                          id="label"
+                          for="job"
+                          >Budget:</label
+                        >
+                        <select
+                          id="job"
+                          name="user_job">
+                          <optgroup label="Small">
+                            <option value="frontend_developer">Under 5k</option>
+                            <option value="frontend_developer">
+                              Under 10k
+                            </option>
+                            <option value="frontend_developer">
+                              Under 15k
+                            </option>
+                          </optgroup>
+                          <optgroup label="Medium">
+                            <option value="frontend_developer">
+                              Under 20k
+                            </option>
+                            <option value="frontend_developer">
+                              Under 25k
+                            </option>
+                            <option value="frontend_developer">
+                              Under 30k
+                            </option>
+                          </optgroup>
+                          <optgroup label="Large">
+                            <option value="frontend_developer">
+                              Under 35k
+                            </option>
+                            <option value="frontend_developer">
+                              Under 40k
+                            </option>
+                          </optgroup>
+                          <optgroup label="Extra Large">
+                            <option value="frontend_developer">
+                              Under 45k
+                            </option>
+                            <option value="frontend_developer">
+                              Under 50k
+                            </option>
+                          </optgroup>
+                        </select>
+
+                        <!-- <label>Your Needs:</label>
+                          <input
+                            type="checkbox"
+                            id="development"
+                            value="interest_development"
+                            name="user_interest" /><label
+                            class="light"
+                            for="development"
+                            >Interior Designs</label
+                          ><br />
+                          <input
+                            type="checkbox"
+                            id="design"
+                            value="interest_design"
+                            name="user_interest" /><label
+                            class="light"
+                            for="design"
+                            >Furniture</label
+                          ><br />
+                          <input
+                            type="checkbox"
+                            id="business"
+                            value="interest_business"
+                            name="user_interest" /><label
+                            class="light"
+                            for="business"
+                            >Kitchen</label
+                          > -->
+                      </fieldset>
+
+                      <button
+                        class="form-Button"
+                        type="submit"
+                        onclick="closePopup()">
+                        Submit
+                      </button>
+                      <button
+                        class="form-Button"
+                        type="button"
+                        onclick="closePopup()">
+                        Close
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </div>
               <!-- <div class="loginForm">
                 <div
@@ -1114,8 +1203,6 @@
       </footer>
       <!-- Fixed footer end-->
     </div>
-    <!-- Main end -->
-    <!--=============== scripts ===============-->
     <script
       type="text/javascript"
       src="js/jquery.min.js"></script>

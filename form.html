@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css" />
+  <style>
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #384047;
+    }
+
+    form {
+      max-width: 350px;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: #3e2723;
+      border-radius: 8px;
+    }
+
+    .form-h1 {
+      margin: 0 0 5px 0;
+      text-align: center;
+      color: white;
+    }
+
+    input[type='text'],
+    input[type='password'],
+    input[type='date'],
+    input[type='datetime'],
+    input[type='email'],
+    input[type='number'],
+    input[type='search'],
+    input[type='tel'],
+    input[type='time'],
+    input[type='url'],
+    textarea,
+    select {
+      background: linear-gradient(to right, rgb(237, 91, 44), rgb(255, 207, 109));
+      border: none;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      font-weight: bold;
+      padding: 10px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #3e2723;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      margin-bottom: 5px;
+    }
+
+    input[type='radio'],
+    input[type='checkbox'] {
+      margin: 0 4px 8px 0;
+    }
+
+    select {
+      padding: 6px;
+      height: 32px;
+      border-radius: 2px;
+    }
+
+   .form-Button {
+      padding: 8px 9px 6px 9px;
+      color: #111;
+      background: linear-gradient(to right, rgb(237, 91, 44), rgb(255, 207, 109));
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      font-weight: bold;
+      width: 100%;
+      border: none;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+      margin-top: 5px;
+    }
+
+
+
+
+    #legend {
+      font-size: 1.4em;
+      margin-bottom: 2px;
+      color: white;
+    }
+
+    label {
+      display: block;
+      color: rgb(237, 91, 44);
+      margin-bottom: 5px;
+    }
+
+    label.light {
+      font-weight: 300;
+      display: inline;
+    }
+
+    .number {
+      background:linear-gradient(to right, rgb(237, 91, 44), rgb(255, 207, 109));
+      color: #111;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      font-size: 15px;
+      margin-right: 4px;
+      /* line-height: 30px; */
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+      border-radius: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+      form {
+        max-width: 450px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <form action="" method="post">
+        <h1 class="form-h1">Meet a Designer</h1>
+
+        <fieldset id="fieldset">
+          <legend id="legend"><span class="number">1</span> Your Basic Info</legend>
+
+          <label for="name">Name:</label>
+          <input required type="text" id="name" name="user_name" />
+
+          <label for="email">Email:</label>
+          <input required type="email" id="mail" name="user_email" />
+
+          <label for="password">Phone Number:</label>
+          <input required type="tel" id="password" name="user_password" />
+        </fieldset>
+        <fieldset>
+          <legend id="legend"><span class="number">2</span>Your Home Info</legend>
+          <label>Property Type:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age" /><label for="under_13"
+            class="light">Small</label><br />
+          <input type="radio" id="over_13" value="over_13" name="user_age" /><label for="over_13"
+            class="light">Medium</label><br />
+          <input type="radio" id="over_13" value="over_13" name="user_age" /><label for="over_13"
+            class="light">Large</label><br />
+          <input type="radio" id="over_13" value="over_13" name="user_age" /><label for="over_13" class="light">Extra
+            Large</label>
+
+          <!-- <label for="bio">Bio:</label>
+            <textarea
+              id="bio"
+              name="user_bio"></textarea> -->
+
+          <label for="job">Budget:</label>
+          <select id="job" name="user_job">
+            <optgroup label="Small">
+              <option value="frontend_developer">Under 5k</option>
+              <option value="frontend_developer">Under 10k</option>
+              <option value="frontend_developer">Under 15k</option>
+            </optgroup>
+            <optgroup label="Medium">
+              <option value="frontend_developer">Under 20k</option>
+              <option value="frontend_developer">Under 25k</option>
+              <option value="frontend_developer">Under 30k</option>
+            </optgroup>
+            <optgroup label="Large">
+              <option value="frontend_developer">Under 35k</option>
+              <option value="frontend_developer">Under 40k</option>
+            </optgroup>
+            <optgroup label="Extra Large">
+              <option value="frontend_developer">Under 45k</option>
+              <option value="frontend_developer">Under 50k</option>
+            </optgroup>
+          </select>
+
+          <!-- <label>Your Needs:</label>
+            <input
+              type="checkbox"
+              id="development"
+              value="interest_development"
+              name="user_interest" /><label
+              class="light"
+              for="development"
+              >Interior Designs</label
+            ><br />
+            <input
+              type="checkbox"
+              id="design"
+              value="interest_design"
+              name="user_interest" /><label
+              class="light"
+              for="design"
+              >Furniture</label
+            ><br />
+            <input
+              type="checkbox"
+              id="business"
+              value="interest_business"
+              name="user_interest" /><label
+              class="light"
+              for="business"
+              >Kitchen</label
+            > -->
+        </fieldset>
+
+        <button class="form-Button" type="submit" onclick="closePopup()">
+          Submit
+        </button>
+        <button class="form-Button" type="button" onclick="closePopup()">
+          Close
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
