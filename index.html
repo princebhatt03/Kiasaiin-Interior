@@ -280,275 +280,80 @@
               <div
                 class="popup-form11"
                 id="popup-formm1">
-                <div class="row">
-                  <div class="col-md-12">
-                    <form
-                      id="formmm"
-                      action=""
-                      method="post">
-                      <h1 class="form-h1">Meet a Designer</h1>
-
-                      <fieldset id="fieldset">
-                        <legend id="legend">
-                          <span class="number">1</span> Your Basic Info
-                        </legend>
-
-                        <!-- <label for="name">Name:</label> -->
-                        <input
-                          placeholder="Enter Name"
-                          required
-                          type="text"
-                          id="name"
-                          name="user_name" />
-
-                        <!-- <label for="email">Email:</label> -->
-                        <input
-                          required
-                          type="email"
-                          id="mail"
-                          placeholder="Enter Email"
-                          name="user_email" />
-
-                        <!-- <label for="password">Phone Number:</label> -->
-                        <input
-                          placeholder="Enter Phone Number"
-                          required
-                          type="tel"
-                          id="password"
-                          name="user_password" />
-                      </fieldset>
-                      <fieldset>
-                        <legend id="legend">
-                          <span class="number">2</span>Your Home Info
-                        </legend>
-                        <label id="label">Property Type:</label>
-                        <div class="flex">
-                          <input
-                            type="radio"
-                            id="under_13"
-                            value="under_13"
-                            name="user_age" /><label
-                            for="under_13"
-                            class="light"
-                            >Small</label
-                          >
-                          <input
-                            type="radio"
-                            id="over_13"
-                            value="over_13"
-                            name="user_age" /><label
-                            for="over_13"
-                            class="light"
-                            >Medium</label
-                          >
-                          <input
-                            type="radio"
-                            id="over_13"
-                            value="over_13"
-                            name="user_age" /><label
-                            for="over_13"
-                            class="light"
-                            >Large</label
-                          >
-                          <!-- <input type="radio" id="over_13" value="over_13" name="user_age" /> -->
+                <div id="form-div">
+                  <div class="left">
+                    <h1>KiaSaiInteriors</h1>
+                    <img
+                      src="img/form-img copy.jpg"
+                      class="left-img"
+                      alt="" />
+                  </div>
+                  <div class="right">
+                    <form action="">
+                      <div class="form-body">
+                        <div class="form-text">
+                          <h1>Get A Free Consultation</h1>
+                          <div class="form-text2">
+                            <p>Tell us about your home</p>
+                            <div class="form-buttons">
+                              <button>1 BHK</button>
+                              <button>2 BHK</button>
+                              <button>3 BHK</button>
+                              <button>4+ BHK</button>
+                              <button>Independent Home/ Vila</button>
+                            </div>
+                            <p id="form-para1">
+                              <i class="fa-solid fa-house"></i> Please Select
+                              your Home Type
+                            </p>
+                            <p>What's Your Budget</p>
+                            <div class="form-buttons">
+                              <button class="form-btn-alt">Under 5k</button>
+                              <button class="form-btn-alt">Under 10k</button>
+                              <button class="form-btn-alt">Under 15k</button>
+                              <button class="form-btn-alt">Under 20k</button>
+                              <button class="form-btn-alt">
+                                More Than 20k
+                              </button>
+                            </div>
+                            <p id="form-para2">
+                              <i class="fa-solid fa-sack-dollar"></i> Please
+                              Select your budget
+                            </p>
+                          </div>
                         </div>
-                        <!-- <label for="over_13"
-                        class="light">Extra
-                        Large</label><br> -->
-
-                        <!-- <label for="bio">Bio:</label>
-                          <textarea
-                            id="bio"
-                            name="user_bio"></textarea> -->
-
-                        <label
-                          id="label"
-                          for="job"
-                          >Budget:</label
-                        >
-                        <select
-                          id="job"
-                          name="user_job">
-                          <optgroup label="Small">
-                            <option value="frontend_developer">Under 5k</option>
-                            <option value="frontend_developer">
-                              Under 10k
-                            </option>
-                            <option value="frontend_developer">
-                              Under 15k
-                            </option>
-                          </optgroup>
-                          <optgroup label="Medium">
-                            <option value="frontend_developer">
-                              Under 20k
-                            </option>
-                            <option value="frontend_developer">
-                              Under 25k
-                            </option>
-                            <option value="frontend_developer">
-                              Under 30k
-                            </option>
-                          </optgroup>
-                          <optgroup label="Large">
-                            <option value="frontend_developer">
-                              Under 35k
-                            </option>
-                            <option value="frontend_developer">
-                              Under 40k
-                            </option>
-                          </optgroup>
-                          <optgroup label="Extra Large">
-                            <option value="frontend_developer">
-                              Under 45k
-                            </option>
-                            <option value="frontend_developer">
-                              Under 50k
-                            </option>
-                          </optgroup>
-                        </select>
-
-                        <!-- <label>Your Needs:</label>
+                        <div class="form-body-inner">
+                          <label for="text">What is your name?</label>
                           <input
-                            type="checkbox"
-                            id="development"
-                            value="interest_development"
-                            name="user_interest" /><label
-                            class="light"
-                            for="development"
-                            >Interior Designs</label
-                          ><br />
+                            type="text"
+                            required
+                            placeholder="Enter Your Name" />
+                          <label for="text"
+                            >Tell us your mobile number, so we can fix your
+                            appointment</label
+                          >
                           <input
-                            type="checkbox"
-                            id="design"
-                            value="interest_design"
-                            name="user_interest" /><label
-                            class="light"
-                            for="design"
-                            >Furniture</label
-                          ><br />
-                          <input
-                            type="checkbox"
-                            id="business"
-                            value="interest_business"
-                            name="user_interest" /><label
-                            class="light"
-                            for="business"
-                            >Kitchen</label
-                          > -->
-                      </fieldset>
-
-                      <button
-                        class="form-Button"
-                        type="submit"
-                        onclick="closePopup()">
-                        Submit
-                      </button>
-                      <button
-                        class="form-Button"
-                        type="button"
-                        onclick="closePopup()">
-                        Close
-                      </button>
+                            type="tel"
+                            required
+                            placeholder="Enter Your Phone Number" />
+                          <div class="btn-cont">
+                            <button
+                              type="submit"
+                              id="submit-btn">
+                              Book Free Consultations
+                            </button>
+                            <button
+                              onclick="closePopup()"
+                              id="close-btn">
+                              Close Form
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
               </div>
-              <!-- <div class="loginForm">
-                <div
-                  class="form-popup"
-                  id="myForm">
-                  <form
-                    action="/action_page.php"
-                    class="form-container">
-                    <h1 id="formTitle">Meet a Designer</h1>
-
-                    <input
-                      type="text"
-                      placeholder="Enter Name"
-                      name="name"
-                      required />
-
-                    <input
-                      type="tel"
-                      placeholder="Enter Number"
-                      name="number"
-                      required />
-                    <input
-                      type="email"
-                      placeholder="Enter Email"
-                      name="email"
-                      required />
-                    <select
-                      id="Budget"
-                      name="Budget">
-                      <option
-                        class="valls"
-                        value="Budget">
-                        Budget
-                      </option>
-                      <option
-                        class="valls"
-                        value="under 5k">
-                        under 5k
-                      </option>
-                      <option
-                        class="valls"
-                        value="under 10k">
-                        under 10k
-                      </option>
-                      <option
-                        class="valls"
-                        value="under 15k">
-                        under 15k
-                      </option>
-                      <option
-                        class="valls"
-                        value="under 20k">
-                        under 20k
-                      </option>
-                    </select>
-                    <select
-                      id="Ptype"
-                      name="Property">
-                      <option
-                        class="valls"
-                        value="Property Type">
-                        Property Type
-                      </option>
-                      <option
-                        class="valls"
-                        value="Small">
-                        Small
-                      </option>
-                      <option
-                        class="valls"
-                        value="Medium">
-                        Medium
-                      </option>
-                      <option
-                        class="valls"
-                        value="Large">
-                        Large
-                      </option>
-                      <option
-                        class="valls"
-                        value="Extra Large">
-                        Extra Large
-                      </option>
-                    </select>
-                    <button
-                      type="submit"
-                      class="btn">
-                      Submit
-                    </button>
-                    <button
-                      type="reset"
-                      class="btn cancel">
-                      Reset
-                    </button>
-                  </form>
-                </div>
-              </div> -->
               <!-- Hero image   end -->
               <div class="overlay"></div>
               <!-- Hero text   -->
