@@ -954,3 +954,38 @@ function closePopup() {
   document.getElementById('overlay-formm1').style.display = 'none';
   document.getElementById('popup-formm1').style.display = 'none';
 }
+
+// formDiv
+
+let houseType = '';
+let budget = '';
+
+function setHouseType(type) {
+  houseType = type;
+  console.log('Selected house type:', houseType);
+}
+
+function setBudget(amount) {
+  budget = amount;
+  console.log('Selected budget:', budget);
+}
+
+document
+  .getElementById('userForm')
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    const userData = {};
+    formData.forEach((value, key) => {
+      userData[key] = value;
+    });
+    userData['House Type'] = houseType;
+    userData['Budget'] = budget;
+    console.log('User data:', userData);
+    // You can send this data to the server for further processing here
+    alert('Form submitted successfully!');
+    // Optionally, you can reset the form
+    this.reset();
+    houseType = '';
+    budget = '';
+  });
