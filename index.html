@@ -280,97 +280,40 @@
               <div
                 class="popup-form11"
                 id="popup-formm1">
-                <div class="main-container">
-                  <div class="form-container">
-                    <div class="image-container">
-                      <img
-                        class="image"
-                        src="img/form-img.jpg"
-                        alt="Interior Design" />
-                    </div>
-
-                    <div class="form">
-                      <h2 class="form-h2">Select your house type:</h2>
-                      <div class="form-group">
-                        <button
-                          class="form-btnss"
-                          onclick="setHouseType('1BHK')">
-                          1 BHK
-                        </button>
-                        <button
-                          class="form-btnss"
-                          onclick="setHouseType('2BHK')">
-                          2 BHK
-                        </button>
-                        <button
-                          class="form-btnss"
-                          onclick="setHouseType('3BHK')">
-                          3 BHK
-                        </button>
-                        <button
-                          class="form-btnss"
-                          onclick="setHouseType('4BHK')">
-                          4 BHK
-                        </button>
-                      </div>
-
-                      <h2 class="form-h2">Select your budget:</h2>
-                      <div class="form-group">
-                        <button
-                          class="form-btnss"
-                          onclick="setBudget('Under 10k')">
-                          Under 10k
-                        </button>
-                        <button
-                          class="form-btnss"
-                          onclick="setBudget('Under 20k')">
-                          Under 20k
-                        </button>
-                        <button
-                          class="form-btnss"
-                          onclick="setBudget('Under 30k')">
-                          Under 30k
-                        </button>
-                        <button
-                          class="form-btnss"
-                          onclick="setBudget('Under 40k')">
-                          Under 40k
-                        </button>
-                      </div>
-
-                      <h2 class="form-h2">Enter your details:</h2>
-                      <form id="userForm">
-                        <div class="form-group">
-                          <label for="name">Name:</label>
-                          <input
-                            placeholder="Enter Name"
-                            type="text"
-                            id="name"
-                            name="name"
-                            required />
-                        </div>
-                        <div class="form-group">
-                          <label for="phone">Phone Number:</label>
-                          <input
-                            placeholder="Enter Phone Number"
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            pattern="[0-9]{10}"
-                            required />
-                        </div>
-                        <input
-                          class="form-btnss-color"
-                          type="submit"
-                          value="Submit" />
-                        <button
-                          class="form-btnss-color"
-                          onclick="closePopup()">
-                          Close Form
-                        </button>
-                      </form>
-                    </div>
+                <div
+                  class="form-container"
+                  id="form-form">
+                  <button
+                    onclick="closePopup()"
+                    id="close-btn"
+                    class="close-btn">
+                    &times;
+                  </button>
+                  <h2>Meet a Designer</h2>
+                  <div class="buttons-container">
+                    <button class="house-type-btn">1 BHK</button>
+                    <button class="house-type-btn">2 BHK</button>
+                    <button class="house-type-btn">3 BHK</button>
+                    <button class="house-type-btn">4 BHK</button>
                   </div>
+                  <div class="buttons-container">
+                    <button class="budget-btn">Under 5K</button>
+                    <button class="budget-btn">Under 10K</button>
+                    <button class="budget-btn">Under 25K</button>
+                  </div>
+                  <form id="user-form">
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Name"
+                      required />
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="Phone Number"
+                      required />
+                    <button type="submit">Bool free Consultation</button>
+                  </form>
                 </div>
               </div>
               <!-- Hero image   end -->

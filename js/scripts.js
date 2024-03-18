@@ -948,44 +948,53 @@ $(document).ready(function () {
 function openPopup() {
   document.getElementById('overlay-formm1').style.display = 'block';
   document.getElementById('popup-formm1').style.display = 'block';
+  document.getElementById('form-form').style.display = 'block';
 }
 
 function closePopup() {
   document.getElementById('overlay-formm1').style.display = 'none';
   document.getElementById('popup-formm1').style.display = 'none';
+  document.getElementById('form-form').style.display = 'none';
 }
 
 // formDiv
 
-let houseType = '';
-let budget = '';
+document.addEventListener('DOMContentLoaded', function () {
+  const formContainer = document.querySelector('.form-container');
+  const closeButton = document.getElementById('close-btn');
 
-function setHouseType(type) {
-  houseType = type;
-  console.log('Selected house type:', houseType);
-}
-
-function setBudget(amount) {
-  budget = amount;
-  console.log('Selected budget:', budget);
-}
-
-document
-  .getElementById('userForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-    const formData = new FormData(this);
-    const userData = {};
-    formData.forEach((value, key) => {
-      userData[key] = value;
-    });
-    userData['House Type'] = houseType;
-    userData['Budget'] = budget;
-    console.log('User data:', userData);
-    // You can send this data to the server for further processing here
-    alert('Form submitted successfully!');
-    // Optionally, you can reset the form
-    this.reset();
-    houseType = '';
-    budget = '';
+  closeButton.addEventListener('click', function () {
+    formContainer.style.display = 'none';
   });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      formContainer.style.display = 'block';
+    }
+  });
+
+  const houseTypeButtons = document.querySelectorAll('.house-type-btn');
+  const budgetButtons = document.querySelectorAll('.budget-btn');
+  const userForm = document.getElementById('user-form');
+
+  houseTypeButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      console.log('Selected House Type:', button.textContent);
+    });
+  });
+
+  budgetButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      console.log('Selected Budget:', button.textContent);
+    });
+  });
+
+  userForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    console.log('Submitted:', { name, phone });
+    // You can add further processing or submit data to a server here
+    userForm.reset();
+  });
+});
