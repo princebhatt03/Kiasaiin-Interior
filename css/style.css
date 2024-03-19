@@ -608,6 +608,7 @@ section {
   float: left;
   width: 100%;
   /*opacity: 0.6;*/
+  height: 40vh;
   padding-top: 50px;
 }
 
@@ -4316,6 +4317,7 @@ article .section-title {
     float: left;
     width: 100%;
     opacity: 1;
+    height: 35vh;
     padding-top: 30px;
   }
 
